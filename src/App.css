@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -38,5 +37,83 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #141414;
 }
+
+
+body { 
+  overflow-x: hidden;
+}
+
+.logo-home-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  padding: 1rem;
+}
+
+.logo-home-icone {
+  position: absolute;
+  z-index: 3;
+  height: 7rem;
+  animation: spin2 10s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.logo-home {
+  height: 21rem;
+  position: relative;
+  z-index: 2;
+}
+
+
+.logo-home-rascunho {
+  height: 21rem;
+  position: absolute;
+  z-index: 1;
+  animation: wheelSpin 10s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* .logo-home-rascunho:hover {
+  animation-play-state: paused;
+} */
+
+@keyframes wheelSpin {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(300px) rotate(360deg);
+  }
+  100% {
+    transform: translateX(0) rotate(-360deg);
+  }
+}
+
+
