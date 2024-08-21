@@ -57,7 +57,7 @@ body {
 .logo-home-icone {
   position: absolute;
   z-index: 3;
-  height: 7rem;
+  height: 7.1rem;
   animation: spin2 10s ease-in-out infinite;
 }
 
